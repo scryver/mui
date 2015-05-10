@@ -14,6 +14,12 @@ var flatClass = buttonClass + '-flat',
 var Ripple = require('./ripple.jsx');
 var util = require('../js/lib/util.js');
 
+try {
+    var React = require('react');
+} catch (e) {
+    var React = React || {};
+}
+
 var Button = React.createClass({
   mixins: [Ripple],
   getDefaultProps: function() {

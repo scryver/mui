@@ -13,8 +13,13 @@ var dropdownClass = 'mui-dropdown',
     openClass = 'mui-open',
     rightClass = 'mui-dropdown-menu-right';
 
-var util = require('../js/lib/util'),
-    jqLite = require('../js/lib/jqLite');
+var util = require('../js/lib/util');
+
+try {
+    var React = require('react');
+} catch (e) {
+    var React = React || {};
+}
 
 var buttons = require('./buttons.jsx');
 var Button = buttons.Button;

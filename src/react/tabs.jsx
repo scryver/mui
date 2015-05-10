@@ -15,6 +15,12 @@ var tabClass = 'mui-tabs',
 
 var util = require('../js/lib/util.js');
 
+try {
+    var React = require('react');
+} catch (e) {
+    var React = React || {};
+}
+
 var Tabs = React.createClass({
   getDefaultProps: function() {
     return {

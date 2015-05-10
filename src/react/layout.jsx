@@ -9,6 +9,12 @@ var containerClass = 'mui-container',
     fluidClass = 'mui-container-fluid',
     panelClass = 'mui-panel';
 
+try {
+    var React = require('react');
+} catch (e) {
+    var React = React || {};
+}
+
 
 var Container = React.createClass({
   render: function() {
@@ -43,5 +49,5 @@ var Panel = React.createClass({
 module.exports = {
   Container: Container,
   FluidContainer: FluidContainer,
-  Panel: Panel
+  Panel: Panel,
 };

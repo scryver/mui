@@ -14,6 +14,12 @@ var formControlClass = 'mui-form-control',
 
 var util = require('../js/lib/util.js');
 
+try {
+    var React = require('react');
+} catch (e) {
+    var React = React || {};
+}
+
 /**
  * Constructs a FormControl element.
  * @class

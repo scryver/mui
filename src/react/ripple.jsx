@@ -9,6 +9,12 @@ var rippleClass = 'mui-ripple-effect';
 
 var jqLite = require('../js/lib/jqLite.js');
 
+try {
+    var React = require('react');
+} catch (e) {
+    var React = React || {};
+}
+
 var Ripple = {
   getInitialState: function() {
     return {
