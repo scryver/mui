@@ -35,5 +35,6 @@
     "README.md",
     "RELEASE.md",
     "LICENSE.txt"
-  ]
+  ],
+  "main": "src/react/mui-react.js"
 }
