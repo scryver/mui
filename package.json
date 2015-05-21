@@ -28,5 +28,12 @@
   "dependencies": {},
   "scripts": {
     "test": "mocha"
-  }
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "README.md",
+    "RELEASE.md",
+    "LICENSE.txt"
+  ]
 }
