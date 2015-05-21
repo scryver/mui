@@ -11,7 +11,6 @@ var flatClass = buttonClass + '-flat',
     largeClass = buttonClass + '-lg',
     floatingClass = buttonClass + '-floating';
 
-var Ripple = require('./ripple.jsx');
 var util = require('../js/lib/util.js');
 
 try {
@@ -19,6 +18,8 @@ try {
 } catch (e) {
     var React = React || {};
 }
+
+var Ripple = require('./ripple.jsx');
 
 var Button = React.createClass({
   mixins: [Ripple],
